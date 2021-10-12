@@ -1,3 +1,5 @@
+// Write a program that calculates the maximum of two given numbers.
+
 function maximumNumber(num1, num2) {
   if (num1 > num2) {
     return num1;
