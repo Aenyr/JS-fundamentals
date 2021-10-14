@@ -15,5 +15,6 @@ function sum() {
       console.log(i);
     }
   }
+  return;
 }
 sum();

@@ -4,8 +4,7 @@
 function findLetter(sentance, letter1, letter2) {
   let counter = 0;
   for (let i = 0; i < sentance.length; i++) {
-    if (letter1 === sentance[i]) counter++;
-    if (letter2 === sentance[i]) counter++;
+    if (letter1 === sentance[i] || letter2 === sentance[i]) counter++;
   }
   return counter;
 }
