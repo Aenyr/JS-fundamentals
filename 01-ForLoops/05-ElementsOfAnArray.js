@@ -1,14 +1,19 @@
 //Write a program that prints the elements of the following array.
 
 function printElements(arr) {
+  let newString = [];
   for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i][0]);
+    for (let j = 0; j < arr[i].length; j++) {
+      newString += arr[i][j];
+    }
   }
-  return;
+  return newString;
 }
 
-printElements([
-  [1, 2, 1, 24],
-  [8, 11, 9, 4],
-  [7, 0, 7, 27],
-]);
+console.log(
+  printElements([
+    [1, 2, 1, 24],
+    [8, 11, 9, 4],
+    [7, 0, 7, 27],
+  ])
+);
