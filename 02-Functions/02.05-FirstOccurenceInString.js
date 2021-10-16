@@ -3,13 +3,12 @@
 // function should return -1.
 
 function position(str, char) {
-  let pos = [];
   for (let i = 0; i < str.length; i++) {
-    if (str[i] === char) break;
-    pos++;
+    if (str[i] === char) {
+      return i;
+    }
   }
-
-  return pos;
+  return -1;
 }
 
-console.log(position("My random string", "n"));
+console.log(position("My random string", "z"));
